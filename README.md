@@ -1,70 +1,22 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Food
 
-## Available Scripts
+## Mn Lbla e is a website where people can discover, share, and interact with recipes. It provides a platform for food enthusiasts to showcase their culinary skills, explore new dishes, and engage with a vibrant community of like-minded individuals. Here are some of the key features of Mn Lbla :
 
-In the project directory, you can run:
+1. Recipe Sharing: Users can post their favorite recipes, including detailed ingredients, step-by-step instructions, and appealing food photographs. 
 
-### `npm start`
+2. Recipe Discovery: Mn Lbla  allows users to search and explore a wide variety of recipes. They can filter recipes based  and discover new dishes and find inspiration for their next meal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Ratings and Reviews: Users can rate and review recipes shared by others. This feature helps to build a trustworthy and reliable community of recipe contributors. It also enables users to find the best-rated recipes and gain insights from others' experiences.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Social Interaction: Fooddie promotes social interaction among users by providing features such as comments, likes, and shares. Users can engage in discussions, ask questions, and provide feedback on recipes. They can also follow other users and build a network of fellow food enthusiasts.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fooddie aims to be the go-to platform for recipe enthusiasts, providing a dynamic and interactive space where users can share their love for food, connect with others, and explore the world of flavors.
 
-### `npm run build`
+# Front-end 
+## React js and Tailwind
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Back-end
+## Larvel  
+>>>>>>> 0b0cd6f0e9e01986c8fe9fad5b71ad7a7c38cbe0
