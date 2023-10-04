@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../Components/Navbar'
-import Breakfast from './Breakfast'
+// import Navbar from '../Components/Navbar'
+// import Breakfast from './Breakfast'
 import { useParams } from 'react-router-dom'
 
 

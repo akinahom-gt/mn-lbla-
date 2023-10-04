@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import {Splide, SplideSlide} from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/splide.min.css";
+// import {Splide, SplideSlide} from "@splidejs/react-splide";
+// import "@splidejs/splide/dist/css/splide.min.css";
  function Breakfast  () {
     const [data, setData] = useState([]);
     useEffect(() => {

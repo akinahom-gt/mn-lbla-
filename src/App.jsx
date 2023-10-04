@@ -13,7 +13,7 @@ import Chicken from "./Pages/Chicken"
 import Vegetarian from "./Pages/Vegetarian"
 import Dessert from "./Pages/Dessert"
 
-import Footer from './Components/Footer.jsx'
+// import Footer from './Components/Footer.jsx'
 // import Search from "./Components/Search"
 import {
   createBrowserRouter,
@@ -22,7 +22,7 @@ import {
 } from "react-router-dom";
 import Share from "./Pages/Share"
 
-const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+// const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 
 function App () {

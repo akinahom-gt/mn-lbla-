@@ -1,6 +1,6 @@
 import React from 'react'
 import {BiTrendingUp} from "react-icons/bi"
-import {AiOutlineStar,AiFillStar} from "react-icons/ai"
+import {AiFillStar} from "react-icons/ai"
 import HeroPic from "../images/hero.jpg"
 import PopularCat from './PopularCat'
 import { Link } from "react-router-dom"
