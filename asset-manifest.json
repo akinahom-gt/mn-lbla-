@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/mn-lbla-/static/css/main.d497c50e.css",
+    "main.js": "/mn-lbla-/static/js/main.241449dd.js",
+    "static/media/pizza.jpg": "/mn-lbla-/static/media/pizza.013a9743ba63a6fe9a60.jpg",
+    "static/media/latestcake.jfif": "/mn-lbla-/static/media/latestcake.85efdcd1bfc057dcda9a.jfif",
+    "static/media/soup.jfif": "/mn-lbla-/static/media/soup.54764a869b6be73b23bf.jfif",
+    "static/media/hero.jpg": "/mn-lbla-/static/media/hero.24c30b27b54f2e5587fe.jpg",
+    "static/media/chicken.jpg": "/mn-lbla-/static/media/chicken.058ad761c12a5e1bcce4.jpg",
+    "static/media/vegicombo.jpg": "/mn-lbla-/static/media/vegicombo.0d2eec8014b688495725.jpg",
+    "static/media/lunchrated.jpg": "/mn-lbla-/static/media/lunchrated.89339536d413c909295f.jpg",
+    "static/media/shawarma.jpg": "/mn-lbla-/static/media/shawarma.509791ecd829adb854c4.jpg",
+    "static/media/combo.jpg": "/mn-lbla-/static/media/combo.24f22aa7fb34ec91029d.jpg",
+    "static/media/pastarated.jpg": "/mn-lbla-/static/media/pastarated.9dfcdf7c35b8cb52c0a9.jpg",
+    "static/media/donut1.jpg": "/mn-lbla-/static/media/donut1.53e96f0b68ce4effd2fa.jpg",
+    "static/media/pancakerated.jpg": "/mn-lbla-/static/media/pancakerated.86f64fa4e5a531296bec.jpg",
+    "static/media/pasta.jpg": "/mn-lbla-/static/media/pasta.071a9a0b42dd4b85a278.jpg",
+    "static/media/waffelrated.jpg": "/mn-lbla-/static/media/waffelrated.a6422dcb19fc4bab107f.jpg",
+    "static/media/burgerrated.jpg": "/mn-lbla-/static/media/burgerrated.143dc5b19f9e3af2e35a.jpg",
+    "static/media/donutrated.jpg": "/mn-lbla-/static/media/donutrated.63b73ee54e7e17fed541.jpg",
+    "static/media/seafood.jfif": "/mn-lbla-/static/media/seafood.944f62f2332b2843f65c.jfif",
+    "static/media/break.jfif": "/mn-lbla-/static/media/break.8a5b8b06ca01362369ec.jfif",
+    "static/media/Logo.svg": "/mn-lbla-/static/media/Logo.5a082bf1b1a93d9b2da46d06d8834a09.svg",
+    "index.html": "/mn-lbla-/index.html",
+    "static/media/close.svg": "/mn-lbla-/static/media/close.a0b86f4e9d81add5edb13cf77de5ad80.svg",
+    "static/media/menu-alt.svg": "/mn-lbla-/static/media/menu-alt.473241a2f5817f790352f3713971b7c5.svg",
+    "main.d497c50e.css.map": "/mn-lbla-/static/css/main.d497c50e.css.map",
+    "main.241449dd.js.map": "/mn-lbla-/static/js/main.241449dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d497c50e.css",
+    "static/js/main.241449dd.js"
+  ]
+}
