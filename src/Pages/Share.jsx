@@ -3,25 +3,29 @@ import React,{useState} from 'react'
  const Share = () => {
   const [countc, setCountc] = useState(5);
   const [countp, setCountp] = useState(5);
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log('You clicked submit.');
+  }
 
   return (
     <div>  
     
-    <p className='font-pacifico text-[40px] text-center mt-8'>Add recipe</p>
-    <div className=' w-11/12 mx-auto mt-10'>
+    <p className='font-pacifico text-[40px] text-center px-[100px] mt-8'>Add recipe</p>
+    <div className=' w-9/12 mx-auto mt-10'>
     <div className="flex w-full sm:w-10/12 mx-auto md:w-full lg:flex-row flex-col justify-center ">
     <div className="w-full  lg:w-3/5 "></div>
-        <div className="px-[90px] absolute   rounded-[20px]">
+        <div className="px-[70px]  rounded-[20px]">
         <hr className=" border-t-2 lg:w-[900px] sm:w-full h-[1px] border border-black border-opacity-30"></hr> 
         <p className='text-left font-poppins text-[21px] mt-7'>Title </p>
-        <form>
-          <input type="text" name="title" placeholder=' Title ' className='w-[900px] h-[45px] mt-2 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
+        <form onSubmit={handleSubmit}>
+          <input type="text" name="title" placeholder=' Title ' className='lg:w-[900px] md:w-[520px] h-[45px] mt-2 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           <p className='text-left font-poppins text-[21px] mt-8'>Choose Photo </p>
           <p className='text-left font-poppins text-[21px] mt-8'>Information </p>
           <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
           <p className='text-left font-poppins text-[16px] text-gray-500 mt-8'>Preparation time </p>
           <div className='mt-8 w-[300px] h-[35px] bg-[#FFD7C9] text-center py-1 inline-flex gap-[90px] rounded-xl'>
-          <button className='w-[8px] border-0 text-left text-xl' onClick={() => setCountp(countp - 1)}>-</button>
+          <button className='w-[8px] border-0 text-left text-xl' onClick={() => setCountp(countp - 1)} id="prepare">-</button>
           <p className=' text-gray-600 py-2'> {countp}Min </p>
           <button className='w-[8px] border-0 text-right text-xl' onClick={() => setCountp(countp + 1)} id="prepare">+</button>
           </div>        
@@ -35,10 +39,10 @@ import React,{useState} from 'react'
           </div>
          </div>
           <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
-          <p className='text-left font-poppins text-[16px] text-gray-500 mt-8'>DIfficulty </p>
-          <input type="number" name="preparation" placeholder=' DIfficulty ' className='w-[300px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
+          <p className='text-left font-poppins text-[16px] text-gray-500 mt-8'>Difficulty </p>
+          <input type="text" name="diff" placeholder=' DIfficulty ' className='w-[300px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           </div>
-          <div className='grid grid-cols-2'>
+          <div className='grid lg:grid-cols-2 '>
           <div>
           <p className='text-left font-poppins text-[21px] mt-8'>Ingredients </p>
           <input type="text" name="ing" placeholder='Ingredient 1 ' className='w-[300px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' required/>
@@ -53,10 +57,11 @@ import React,{useState} from 'react'
           </div>
           </div>
           <p className='text-left font-poppins text-[21px] mt-8'>Categories </p>
+          <input type="text" name="dir" placeholder='  ' className='lg:w-[840px] md:w-[550px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           <p className='text-left font-poppins text-[21px] mt-8'>Hashtags </p>
-          <input type="text" name="dir" placeholder='  ' className='w-[840px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' required/>
+          <input type="text" name="dir" placeholder='  ' className='lg:w-[840px] md:w-[550px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           <div>
-          <input type="submit" className='w-[100px] bg-orange-600 mt-10 text-white rounded-sm' value="SUBMIT"/>
+          <button type="submit" className='w-[100px] h-[40px] bg-orange-600 mt-9 text-white border-0 rounded-xl'> SUBMIT </button>
           </div>
           </form>
           {/* <div className='top-0'>

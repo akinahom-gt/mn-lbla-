@@ -4,12 +4,12 @@ import {BiLogoFacebook, BiLogoTelegram, BiLogoInstagram, BiLogoTwitter }from 're
 const Footer = () => {
   return (
     
-    <div className='p-7 relative inset-x-0  bottom-0 bg-gray-200 text-black'>
+    <div className='p-7  relative inset-x-0  bottom-0 bg-gray-200 text-black'>
       <div className=' xs:text-center mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  md:gap-2 '> 
-         <div className=' mt-2'>
-          <img className="md:w-[50px]  xs:w-[60px] sm:w-[40px]" src={Logo} alt=''/>
-           <h4 className='font-pacifico text-[50px]'>mn lbla</h4>
+         <div className=''>
+          <img className="md:w-[50px]  xs:w-[40px] sm:w-[40px] " src={Logo} alt=''/>
+           <h4 className='font-pacifico  text-[50px]'>mn lbla</h4>
            <p className='md:py-1  xs:text-center  text-[#6D737A]'>try new recipes from all <br></br>over the world with us</p>
          </div>
          <div className='md:py-7 mb-5'>
