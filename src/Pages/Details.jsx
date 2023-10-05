@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 // import Navbar from '../Components/Navbar'
 // import Breakfast from './Breakfast'
+
 import { useParams } from 'react-router-dom'
+import PopularCat from '../Components/PopularCat'
 
 
 const RecipeId = () => {
@@ -38,8 +40,8 @@ const RecipeId = () => {
 
 <div className=''>
      <div className="inline-flex mt-9 gap-10">
-    <button className="w-[300px] h-[40px] border-0  font-bold text-[24px] hover:bg-orange-300 hover:text-white" onClick={()=>setActive('ingredient')}>Ingredient</button>
-    <button className="w-[300px] h-[40px] border-0  font-bold text-[24px] hover:bg-orange-300 hover:text-white" onClick={()=>setActive('instruction')}>Instruction</button>
+    <button className="w-[300px] h-[40px] border-0  font-bold text-[24px] hover:text-orange-600 " onClick={()=>setActive('ingredient')}>Ingredient</button>
+    <button className="w-[300px] h-[40px] border-0  font-bold text-[24px] hover:text-orange-600 " onClick={()=>setActive('instruction')}>Instruction</button>
      </div>
 {
 
@@ -63,13 +65,14 @@ const RecipeId = () => {
 
 
 <p className='font-pacifico text-[50px] mt-10'>You might also like</p>
-<div className='w-[1320px] h-[400px] bg-[#FFD7C9] mt-7'>
+<PopularCat/>
+<div className='lg:w-[1120px] lg:h-[400px] sm:w-[800px]  bg-[#FFD7C9] mt-7'>
         <p className='font-pacifico text-[46px] text-center py-8'>Delciousness<br></br>to your inbox</p>
         <p className='font-poppins text-center  font-medium text-[20px]'> Enjoy weekly hand picked recipe and <br></br>recomendationst</p>
         <form>
-        <div className=' inline-flex py-3 px-[455px]'>
+        <div className=' inline-flex py-3 px-[320px] sm:grid-cols-1'>
           <input type="email" name="email" placeholder='Email Address' className='w-[350px] h-[55px] text-[20px] px-5' required/>
-          <button className='w-[100px] h-[55px] bg-orange-500 text-white text-[20px] rounded-none border-0'>Join</button>
+          <button className='lg:w-[100px]  lg:h-[55px]  bg-orange-500 text-white text-[20px] rounded-none border-0'>Join</button>
           </div>
           </form>
           <p className='font-poppins text-center py-3 font-medium text-gray-500 text-[14px]'> By joining our newsletter you agree to our terms and condition</p>

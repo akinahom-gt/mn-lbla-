@@ -108,11 +108,11 @@ const Hero = () => {
       </div>
       </div>
       <PopularCat/>
-      <div className='w-[1320px] h-[400px] bg-[#FFD7C9] xs:w-full sm:w-full mt-7'>
+      <div className='w-[1320px] h-[400px] bg-[#FFD7C9]  sm:w-full mt-7'>
         <p className='font-pacifico text-[46px] text-center py-8'>Delciousness<br></br>to your inbox</p>
         <p className='font-poppins text-center  font-medium text-[20px]'> Enjoy weekly hand picked recipe and <br></br>recomendationst</p>
         <form>
-        <div className=' inline-flex py-3 lg:px-[455px] md:px-[200px] xs:px-[50px] sm:px-[100px] '>
+        <div className=' inline-flex py-3 lg:px-[350px] md:px-[200px] xs:px-[50px] sm:px-[100px] '>
           <input type="email" name="email" placeholder='Email Address' className='w-[350px] h-[55px] text-[20px] px-5' required/>
           <button className='w-[100px] h-[55px] bg-orange-500 text-white text-[20px] rounded-none border-0'>Join</button>
           </div>

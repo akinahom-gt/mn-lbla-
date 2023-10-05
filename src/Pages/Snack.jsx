@@ -15,7 +15,7 @@ import React, { useEffect, useState } from 'react'
        
   return (
     <div>
-       <div className=' w-11/12 mx-auto mt-10'>
+       <div className=' w-11/12 mx-auto mt-6'>
        <p className='font-pacifico text-[40px] py-8 sm:text-left hover:text-orange-600'>Snack Category</p>
       
                {/* <Splide options={{
@@ -34,7 +34,7 @@ import React, { useEffect, useState } from 'react'
                     <div className='w-[300px] min-h-min '> */}
                   
                     <img src={recipe.strMealThumb} alt="{recipe.title}"  
-                    className=" w-[250px] h-[250px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>
+                    className=" w-[200px] h-[200px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>
                    
                   
                    <p className='font-poppins text-[15px] px-[93px] mt-4 text-gray-500 font-semibold '>{recipe.strMeal}</p>

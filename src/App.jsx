@@ -12,6 +12,8 @@ import Starter from "./Pages/Starter"
 import Chicken from "./Pages/Chicken"
 import Vegetarian from "./Pages/Vegetarian"
 import Dessert from "./Pages/Dessert"
+// import Meal from "./Components/Meal.jsx"
+
 
 // import Footer from './Components/Footer.jsx'
 // import Search from "./Components/Search"
@@ -130,9 +132,12 @@ function App () {
           path: "/details",
           element:<Details/>
         },
+        // {
+        //   path: "/meal",
+        //   element:<Meal/>
+        // },
 
       ]
-    
   },
 ]);
   return (
