@@ -15,7 +15,7 @@ import Dessert from "./Pages/Dessert"
 // import Meal from "./Components/Meal.jsx"
 
 
-// import Footer from './Components/Footer.jsx'
+import Footer from './Components/Footer.jsx'
 // import Search from "./Components/Search"
 import {
   createBrowserRouter,
@@ -59,7 +59,7 @@ function App () {
         <Navigation />
         
         <Outlet/>
-     {/* <Footer/> */}
+     <Footer/>
       </div> 
     );
   }

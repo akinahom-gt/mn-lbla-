@@ -6,6 +6,7 @@ import React,{useState} from 'react'
 
   return (
     <div>  
+    
     <p className='font-pacifico text-[40px] text-center mt-8'>Add recipe</p>
     <div className=' w-11/12 mx-auto mt-10'>
     <div className="flex w-full sm:w-10/12 mx-auto md:w-full lg:flex-row flex-col justify-center ">
@@ -52,7 +53,6 @@ import React,{useState} from 'react'
           </div>
           </div>
           <p className='text-left font-poppins text-[21px] mt-8'>Categories </p>
-          
           <p className='text-left font-poppins text-[21px] mt-8'>Hashtags </p>
           <input type="text" name="dir" placeholder='  ' className='w-[840px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' required/>
           <div>
@@ -65,9 +65,9 @@ import React,{useState} from 'react'
           </div> */}
           
  
-        </div>
+         </div>
       </div>
-      </div>
+      </div> 
     </div>
   )
 }

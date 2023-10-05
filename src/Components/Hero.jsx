@@ -108,13 +108,13 @@ const Hero = () => {
       </div>
       </div>
       <PopularCat/>
-      <div className='w-[1320px] h-[400px] bg-[#FFD7C9]  sm:w-full mt-7'>
+      <div className='lg:w-[1220px] lg:h-[400px] bg-[#FFD7C9]  sm:w-full xs:w-[600px] mt-7'>
         <p className='font-pacifico text-[46px] text-center py-8'>Delciousness<br></br>to your inbox</p>
         <p className='font-poppins text-center  font-medium text-[20px]'> Enjoy weekly hand picked recipe and <br></br>recomendationst</p>
         <form>
-        <div className=' inline-flex py-3 lg:px-[350px] md:px-[200px] xs:px-[50px] sm:px-[100px] '>
-          <input type="email" name="email" placeholder='Email Address' className='w-[350px] h-[55px] text-[20px] px-5' required/>
-          <button className='w-[100px] h-[55px] bg-orange-500 text-white text-[20px] rounded-none border-0'>Join</button>
+        <div className=' inline-flex py-3 lg:px-[350px] md:px-[200px] xs:px-[70px] sm:px-[120px] '>
+          <input type="email" name="email" placeholder='Email Address' className='lg:w-[350px] lg:h-[55px] sm:w-[200px] text-[20px] px-5' required/>
+          <button className='lg:w-[100px] lg:h-[55px] sm:w-[80px] bg-orange-500 text-white text-[20px] rounded-none border-0'>Join</button>
           </div>
           </form>
           <p className='font-poppins text-center py-3 font-medium text-gray-500 text-[14px]'> By joining our newsletter you agree to our terms and condition</p>
@@ -127,10 +127,12 @@ const Hero = () => {
       <img src={require('../images/combo.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 " alt=""/>
       <p className="font-poppins text-xl text-gray-700 font-medium">Fluffy and  creamy donut</p>
       </div>
+      <Link to ='/Handpick'>
       <div>
       <img src={require('../images/donut1.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50  " alt=""/>
       <p className="font-poppins text-xl text-gray-700 font-medium">Soft and healthy  pancake </p>
       </div>
+      </Link>
       <div>
       <img src={require('../images/shawarma.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 " alt=""/>
       <p className="font-poppins text-xl text-gray-700 font-medium">A well balanced lunch</p>
