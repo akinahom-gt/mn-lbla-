@@ -1,19 +1,40 @@
 import React,{useState} from 'react'
+// import AiOutlineUpload from 'react-icons/ai'
+import {FiUpload }from 'react-icons/fi'
 
+import axios from 'axios';
  const Share = () => {
   const [countc, setCountc] = useState(5);
   const [countp, setCountp] = useState(5);
+  const [image, setImage] = useState(' ')
+
   function handleSubmit(e) {
     e.preventDefault();
     console.log('You clicked submit.');
   }
+ 
+    function handleImage(e){
+      console.log(e.target.files)
+
+      setImage(e.target.files[0])
+    }
+  // function handle(){
+  //   const formData = new FormData()
+  //   formData.append('image', image)
+  //   axios.post ('url', formData).then((res) => {
+  //     console.log(res)
+  //   }
+      
+    // )
+    // }
+  
 
   return (
     <div>  
     
-    <p className='font-pacifico text-[40px] text-center px-[100px] mt-8'>Add recipe</p>
+    <p className='font-pacifico text-[40px] text-center   px-[100px] mt-8'>Add recipe</p>
     <div className=' w-9/12 mx-auto mt-10'>
-    <div className="flex w-full sm:w-10/12 mx-auto md:w-full lg:flex-row flex-col justify-center ">
+    <div className="flex w-full sm:w-10/12 mx-auto md:w-full xs:w-[300px] lg:flex-row flex-col justify-center ">
     <div className="w-full  lg:w-3/5 "></div>
         <div className="px-[70px]  rounded-[20px]">
         <hr className=" border-t-2 lg:w-[900px] sm:w-full h-[1px] border border-black border-opacity-30"></hr> 
@@ -21,6 +42,15 @@ import React,{useState} from 'react'
         <form onSubmit={handleSubmit}>
           <input type="text" name="title" placeholder=' Title ' className='lg:w-[900px] md:w-[520px] h-[45px] mt-2 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           <p className='text-left font-poppins text-[21px] mt-8'>Choose Photo </p>
+          <div className='w-[900px] h-[200px] bg-[#FFD7C9] text-center rounded-xl font-Poppins text-xl font-semibold py-10 mt-5' >
+         
+         <div className='px-[430px]'><FiUpload size={40}/></div>
+          <label htmlFor="photos" className='mt-5'>Upload Your Picture</label>
+          <p className='mt-4 font-normal text-[16px]'>"Maximum size 3MB"</p>
+          </div>
+          <input  class="hidden" id="photos" type="file" name="file" accept="/image" onChange={handleImage} />
+         
+          {/* <button onClick={handle}>Upload</button> */}
           <p className='text-left font-poppins text-[21px] mt-8'>Information </p>
           <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
           <p className='text-left font-poppins text-[16px] text-gray-500 mt-8'>Preparation time </p>

@@ -3,6 +3,7 @@ import Search from "../Components/Search"
 
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
+
 const Breakfast = ({ recipe }) => {
     const {
         idMeal,
@@ -62,6 +63,7 @@ const Breakfast = ({ recipe }) => {
              key={recipe.idMeal}
              recipe={recipe}
           />
+
         )) : "No Results."} 
       </div>
     </div> 

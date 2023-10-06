@@ -107,10 +107,10 @@ const Signup = () => {
              <p className='text-red-600'>{formErrors.password}</p>
 
           <div className=' py-9 space-y-3'>
-
+          <Link to='/profile'>
           <input className='w-[240px] h-[60px] bg-orange-600  transition-all duration-300 hover:bg-Primary-Orange-200 font-poppins tracking-widest border-0 text-white px-6 py-2 rounded-full' type="submit" name="submit" value="Sign Up"/>
           {/* <button className='w-[240px] h-[60px] bg-orange-600 transition-all duration-300 hover:bg-Primary-Orange-200 font-poppins tracking-widest border-0 text-white px-6 py-2 rounded-full'>Login</button> */}
-         
+          </Link>
           </div>
           </form>
           <p className="text-black text-lg font-medium font-Poppins">Don't have an account?

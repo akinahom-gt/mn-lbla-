@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react'
 // import {Splide, SplideSlide} from "@splidejs/react-splide";
 // import "@splidejs/splide/dist/css/splide.min.css";
 import { Link } from "react-router-dom"
+import {AiFillLike, AiTwotoneDislike} from "react-icons/ai"
 
  function Breakfast  () {
-    const [data, setData] = useState([]);
+  const [likeCount, setLikeCount] = useState(0);
+  const [dislikeCount, setDislikeCount] = useState(25);
+  const [activeBtn, setActiveBtn] = useState("none");
+  const [data, setData] = useState([]);
     useEffect(() => {
         getData();
     },[]);
@@ -14,6 +18,45 @@ import { Link } from "react-router-dom"
         console.log(data);
         setData(data.meals);
     }
+    // const handleLikeClick = () => {
+    //   if (activeBtn === "none") {
+    //     setLikeCount(likeCount + 1);
+    //     setActiveBtn("like");
+    //     return;
+    //   }
+  
+    //   if (activeBtn === 'like'){
+    //     setLikeCount(likeCount - 1);
+    //     setActiveBtn("none");
+    //     return;
+    //   }
+  
+    //   if (activeBtn === "dislike") {
+    //     setLikeCount(likeCount + 1);
+    //     setDislikeCount(dislikeCount - 1);
+    //     setActiveBtn("like");
+    //   }
+    // };
+  
+    // const handleDisikeClick = () => {
+    //   if (activeBtn === "none") {
+    //     setDislikeCount(dislikeCount + 1);
+    //     setActiveBtn("dislike");
+    //     return;
+    //   }
+      
+    //   if (activeBtn === 'dislike'){
+    //     setDislikeCount(dislikeCount - 1);
+    //     setActiveBtn("none");
+    //     return;
+    //   }
+  
+    //   if (activeBtn === "like") {
+    //     setDislikeCount(dislikeCount + 1);
+    //     setLikeCount(likeCount - 1);
+    //     setActiveBtn("dislike");
+    //   }
+    // };  
        
   return (
     <div>
@@ -42,6 +85,13 @@ import { Link } from "react-router-dom"
                   {/* to={`/${data.idMeal}`} key={data.idMeal} */}
                     {recipe.strMeal}
                    </Link>
+      {/* <button className={`btn ${activeBtn === 'like' ? 'like-active' : ''} border-0`}   onClick={handleLikeClick} >
+       <AiFillLike size={25} style={{color:'red'}}/>{likeCount}
+      </button>
+
+        <button className={`btn ${activeBtn === 'dislike' ? 'dislike-active' : ''} border-0`} onClick={handleDisikeClick}>
+        <AiTwotoneDislike size={25} style={{color:'black'}}/> {dislikeCount}
+        </button> */}
                     {/* </div> */}
                     {/* </SplideSlide> */}
                 </div>

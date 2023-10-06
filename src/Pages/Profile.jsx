@@ -1,6 +1,7 @@
 import React from 'react'
 import Avatar from "../images/avatar_.jpg"
 // import Footer from './Components/Footer.jsx'
+import { Link } from "react-router-dom"
 
 import {useState} from 'react';
 import {AiFillEye, AiFillEyeInvisible} from 'react-icons/ai'
@@ -199,7 +200,9 @@ const Profile = () => {
         {showPassword ?  <AiFillEye size={20}/>:<AiFillEyeInvisible size={18} />} 
       </button>
 <button className='border-0 '> Sign Out</button>
+<Link to="/delete">
 <button className='border-0 text-orange-500 hover:text-orange-600'>Delete Account</button>
+</Link>
 </div>
 
 </div>

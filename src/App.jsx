@@ -12,6 +12,10 @@ import Starter from "./Pages/Starter"
 import Chicken from "./Pages/Chicken"
 import Vegetarian from "./Pages/Vegetarian"
 import Dessert from "./Pages/Dessert"
+import Profile from "./Pages/Profile"
+import Delete from "./Pages/Delete"
+import Reaction from "./Pages/Reaction"
+
 // import Meal from "./Components/Meal.jsx"
 
 
@@ -59,6 +63,7 @@ function App () {
         <Navigation />
         
         <Outlet/>
+        
      <Footer/>
       </div> 
     );
@@ -132,10 +137,18 @@ function App () {
           path: "/details",
           element:<Details/>
         },
-        // {
-        //   path: "/meal",
-        //   element:<Meal/>
-        // },
+        {
+          path: "/profile",
+          element:<Profile/>
+        },
+        {
+          path: "/delete",
+          element:<Delete/>
+        },
+        {
+          path: "/reaction",
+          element:<Reaction/>
+        },
 
       ]
   },
