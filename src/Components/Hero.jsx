@@ -108,7 +108,7 @@ const Hero = () => {
       </div>
       </div>
       <PopularCat/>
-      <div className='lg:w-[1220px] lg:h-[400px] bg-[#FFD7C9]  sm:w-full xs:w-[600px] mt-7'>
+      <div className='lg:w-[1150px] lg:h-[400px] bg-[#FFD7C9]  sm:w-full xs:w-[600px] mt-7'>
         <p className='font-pacifico text-[46px] text-center py-8'>Delciousness<br></br>to your inbox</p>
         <p className='font-poppins text-center  font-medium text-[20px]'> Enjoy weekly hand picked recipe and <br></br>recomendationst</p>
         <form>
@@ -125,29 +125,29 @@ const Hero = () => {
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2  gap-4 '> 
       <div>
       <img src={require('../images/combo.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 " alt=""/>
-      <p className="font-poppins text-xl text-gray-700 font-medium">Fluffy and  creamy donut</p>
+      <p className="font-poppins text-xl text-gray-700 font-medium">Balanced Lunch</p>
       </div>
       <Link to ='/Handpick'>
       <div>
       <img src={require('../images/donut1.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50  " alt=""/>
-      <p className="font-poppins text-xl text-gray-700 font-medium">Soft and healthy  pancake </p>
+      <p className="font-poppins text-xl text-gray-700 font-medium">Donut </p>
       </div>
       </Link>
       <div>
       <img src={require('../images/shawarma.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 " alt=""/>
-      <p className="font-poppins text-xl text-gray-700 font-medium">A well balanced lunch</p>
+      <p className="font-poppins text-xl text-gray-700 font-medium">Shawarma</p>
       </div>
       <div>
       <img src={require('../images/vegicombo.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 " alt=""/>
-      <p className="font-poppins text-xl text-gray-700 font-medium">Fluffy and  creamy donut</p>
+      <p className="font-poppins text-xl text-gray-700 font-medium">Vegi Combo</p>
       </div>
       <div>
       <img src={require('../images/pizza.jpg')}  className="w-[700px] h-[300px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50  " alt=""/>
-      <p className="font-poppins text-xl text-gray-700 font-medium">Soft and healthy  pancake </p>
+      <p className="font-poppins text-xl text-gray-700 font-medium">Pizza </p>
       </div>
       <div>
       <img src={require('../images/pasta.jpg')}  className="w-[700px] h-[300px]  hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 " alt=""/>
-      <p className="font-poppins text-xl text-gray-700 font-medium">A well balanced lunch</p>
+      <p className="font-poppins text-xl text-gray-700 font-medium">Pasta</p>
       </div>
       </div>
       <p className='font-pacifico text-[40px] mt-10 hover:text-orange-600'>Latest Recipes</p>

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-// import {Splide, SplideSlide} from "@splidejs/react-splide";
-// import "@splidejs/splide/dist/css/splide.min.css";
 import { Link } from "react-router-dom"
-
- function Vegetarian  () {
+import Rating from "../Components/Rating"
+ function Dessert  () {
     const [data, setData] = useState([]);
     useEffect(() => {
         getData();
@@ -37,13 +35,10 @@ import { Link } from "react-router-dom"
                   
                     <img src={recipe.strMealThumb} alt="{recipe.title}"  
                     className=" w-[200px] h-[200px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>
-                   
-                  <Link to="/details" className='font-poppins text-[15px] text-center mt-4 text-gray-500 hover:text-orange-600 font-semibold '>
-                  {/* to={`/${data.idMeal}`} key={data.idMeal} */}
-                    {recipe.strMeal}
+                 <Rating/>
+                  <Link to="/details" className='font-poppins text-[15px]  text-center w-[50px] text-gray-500 font-semibold '>
+                  <div className='px-9'>{recipe.strMeal}</div>
                    </Link>
-                    {/* </div> */}
-                    {/* </SplideSlide> */}
                 </div>
                 
             )
@@ -53,4 +48,4 @@ import { Link } from "react-router-dom"
     </div>
   )
 }
-export default Vegetarian
+export default Dessert

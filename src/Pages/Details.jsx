@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import PopularCat from '../Components/PopularCat'
 
 
-const RecipeId = () => {
+const Details = () => {
     const {idMeal} = useParams()
     // console.log(useParams())
 
@@ -90,4 +90,4 @@ const RecipeId = () => {
   )
 }
 
-export default RecipeId
+export default Details

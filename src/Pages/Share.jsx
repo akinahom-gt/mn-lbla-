@@ -10,7 +10,7 @@ import axios from 'axios';
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('You clicked submit.');
+    console.log('Submitted');
   }
  
     function handleImage(e){
@@ -18,17 +18,6 @@ import axios from 'axios';
 
       setImage(e.target.files[0])
     }
-  // function handle(){
-  //   const formData = new FormData()
-  //   formData.append('image', image)
-  //   axios.post ('url', formData).then((res) => {
-  //     console.log(res)
-  //   }
-      
-    // )
-    // }
-  
-
   return (
     <div>  
     
@@ -42,9 +31,9 @@ import axios from 'axios';
         <form onSubmit={handleSubmit}>
           <input type="text" name="title" placeholder=' Title ' className='lg:w-[900px] md:w-[520px] h-[45px] mt-2 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           <p className='text-left font-poppins text-[21px] mt-8'>Choose Photo </p>
-          <div className='w-[900px] h-[200px] bg-[#FFD7C9] text-center rounded-xl font-Poppins text-xl font-semibold py-10 mt-5' >
+          <div className='lg:w-[900px] h-[200px] md:w-[600px] bg-[#FFD7C9] text-center rounded-xl font-Poppins text-xl font-semibold py-10 mt-5' >
          
-         <div className='px-[430px]'><FiUpload size={40}/></div>
+         <div className='lg:px-[430px] sm:px-[100px]'><FiUpload size={40}/></div>
           <label htmlFor="photos" className='mt-5'>Upload Your Picture</label>
           <p className='mt-4 font-normal text-[16px]'>"Maximum size 3MB"</p>
           </div>
@@ -91,7 +80,7 @@ import axios from 'axios';
           <p className='text-left font-poppins text-[21px] mt-8'>Hashtags </p>
           <input type="text" name="dir" placeholder='  ' className='lg:w-[840px] md:w-[550px] h-[35px] mt-6 bg-[#FFD7C9] text-[20px] px-5 rounded-xl' />
           <div>
-          <button type="submit" className='w-[100px] h-[40px] bg-orange-600 mt-9 text-white border-0 rounded-xl'> SUBMIT </button>
+          <button type="submit" className='w-[100px] h-[40px] bg-orange-600 hover:bg-orange-500 mt-9 text-white border-0 rounded-xl' onClick={handleSubmit}> SUBMIT </button>
           </div>
           </form>
           {/* <div className='top-0'>

@@ -49,7 +49,6 @@ const Profile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can save the form data to your backend or handle it as needed here
     console.log(formData);
   };
 
@@ -196,9 +195,9 @@ const Profile = () => {
         </div>
         </form>
 <div className= " max-w-[1150px] sm:left-[30px] mx-auto sm:flex sm:flex-row  grid grid-cols-1  sm:gap-10  ">
-<button onClick={togglePasswordVisibility} className="border-0 absolute xs:top-[930px] lg:top-[620px] lg:left-[530px] sm:top-[620px] sm:left-[440px] items-center px-[270px] sm:px-[320px]" >
+{/* <button onClick={togglePasswordVisibility} className="border-0 absolute xs:top-[930px] lg:top-[620px] lg:left-[530px] sm:top-[620px] sm:left-[440px] items-center px-[270px] sm:px-[320px]" >
         {showPassword ?  <AiFillEye size={20}/>:<AiFillEyeInvisible size={18} />} 
-      </button>
+      </button> */}
 <button className='border-0 '> Sign Out</button>
 <Link to="/delete">
 <button className='border-0 text-orange-500 hover:text-orange-600'>Delete Account</button>

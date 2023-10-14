@@ -1,42 +1,24 @@
-import { useState } from "react";
-import {GoSearch} from "react-icons/go"
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import {BsSearch} from 'react-icons/bs'
 
-const Search = () => {
-  const [ searchTerm, setSearchTerm ] = useState( "" );
+function Search() {
+  const [searchTerm, setSearchTerm] = useState('');
 
-
-  const handleSubmit =(event)=> {
-    event.preventDefault();
-   
-    setSearchTerm("")
-  
-
-  }
-  const handleChange = (event) => {
-    setSearchTerm(event.target.value)
-
-    
-  }
   return (
-    <div className="">
-      <form onSubmit={handleSubmit}>
-       
-      
-    
-        <div className="group transition-all duration-300 flex gap-3 items-center">
-          <button className="border-0">
-
-          <GoSearch className="transition-all duration-300 group-hover:text-orange-500" size={30}/>
-          </button>
-          
-    <input value={ searchTerm } onChange={ handleChange } className="hidden focus:outline-none focus:shadow-md  border-[1px] font-poppins px-6 py-3 transition-all duration-300 rounded-md border-Tertiary-Black-200/50 group-hover:flex w-8 h-8 xl:group-hover:w-[200px] lg:group-hover:w-[130px]  " type="search" placeholder="Search ....."/>
-      
+    <div>
+      <div className='inline-flex'>
+      <input
+        className='outline-orange-400 rounded-xl font-poppins w-[190px] px-2'
+        type="text"
+        placeholder="Search meal by name"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <Link to={`/detail?name=${searchTerm}`}> <button className='border-0 '><BsSearch size={20}/></button></Link>
       </div>
-
-      </form>
     </div>
-
-  )
+  );
 }
 
-export default Search
+export default Search;

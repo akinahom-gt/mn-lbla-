@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-// import {Splide, SplideSlide} from "@splidejs/react-splide";
-// import "@splidejs/splide/dist/css/splide.min.css";
- function Breakfast  () {
+import { Link } from "react-router-dom"
+import Rating from "../Components/Rating"
+
+ function Snack  () {
     const [data, setData] = useState([]);
     useEffect(() => {
         getData();
@@ -17,29 +18,18 @@ import React, { useEffect, useState } from 'react'
     <div>
        <div className=' w-11/12 mx-auto mt-6'>
        <p className='font-pacifico text-[40px] py-8 sm:text-left hover:text-orange-600'>Snack Category</p>
-      
-               {/* <Splide options={{
-        perPage:6,
-        arrows:false,
-        pagination:false,
-        drag:"free",
-        gap:"5rem",
-       }}> */}
+    
        <div className=' inline-flex grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
         { data.map((recipe) => {
             return(
                 <div>
-                    {/* <SplideSlide> */}
-                    {/* <p className="font-poppins text-xl text-gray-700 font-medium">{recipe.title}</p>
-                    <div className='w-[300px] min-h-min '> */}
                   
-                    <img src={recipe.strMealThumb} alt="{recipe.title}"  
+                 <img src={recipe.strMealThumb} alt="{recipe.title}"  
                     className=" w-[200px] h-[200px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>
-                   
-                  
-                   <p className='font-poppins text-[15px] px-[93px] mt-4 text-gray-500 font-semibold '>{recipe.strMeal}</p>
-                    {/* </div> */}
-                    {/* </SplideSlide> */}
+                 <Rating/>
+                  <Link to="/details" className='font-poppins text-[15px]  text-centertext-gray-500 font-semibold '>
+                  <div className='px-6'>{recipe.strMeal}</div>
+                   </Link>
                 </div>
                 
             )
@@ -49,4 +39,4 @@ import React, { useEffect, useState } from 'react'
     </div>
   )
 }
-export default Breakfast
+export default Snack
