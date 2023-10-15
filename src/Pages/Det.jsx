@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import PopularCat from '../Components/PopularCat'
 
 
-const Details = () => {
+const Det = () => {
     const {idMeal} = useParams()
     // console.log(useParams())
 
@@ -13,7 +13,7 @@ const Details = () => {
     useEffect(() => {
   
       const fetchData = async () => {
-        const api = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=52948`)
+        const api = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=52910`)
         const data = await api.json();
   
         // console.log(data.meals);
@@ -81,4 +81,4 @@ const Details = () => {
   )
 }
 
-export default Details
+export default Det

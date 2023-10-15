@@ -15,14 +15,14 @@ import { Link } from "react-router-dom"
     }
        
   return (
-    <div>
+    <div >
        <div className=' w-11/12 mx-auto mt-6'>
        <p className='font-pacifico text-[40px] py-8 sm:text-left hover:text-orange-600'>Seafood Category</p>
       
        <div className=' inline-flex grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
         { data.map((recipe) => {
             return(
-                <div>
+                <div key={recipe.idMeal}>
                    
                     <img src={recipe.strMealThumb} alt="{recipe.title}"  
                     className=" w-[200px] h-[200px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>

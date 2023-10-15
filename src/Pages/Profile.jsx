@@ -198,7 +198,7 @@ const Profile = () => {
 {/* <button onClick={togglePasswordVisibility} className="border-0 absolute xs:top-[930px] lg:top-[620px] lg:left-[530px] sm:top-[620px] sm:left-[440px] items-center px-[270px] sm:px-[320px]" >
         {showPassword ?  <AiFillEye size={20}/>:<AiFillEyeInvisible size={18} />} 
       </button> */}
-<button className='border-0 '> Sign Out</button>
+{/* <button className='border-0 '> Sign Out</button> */}
 <Link to="/delete">
 <button className='border-0 text-orange-500 hover:text-orange-600'>Delete Account</button>
 </Link>

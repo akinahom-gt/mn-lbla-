@@ -108,7 +108,7 @@ const Hero = () => {
       </div>
       </div>
       <PopularCat/>
-      <div className='lg:w-[1150px] lg:h-[400px] bg-[#FFD7C9]  sm:w-full xs:w-[600px] mt-7'>
+      <div className='lg:w-[1200px] lg:h-[400px] bg-[#FFD7C9]  sm:w-full xs:w-[600px] mt-7'>
         <p className='font-pacifico text-[46px] text-center py-8'>Delciousness<br></br>to your inbox</p>
         <p className='font-poppins text-center  font-medium text-[20px]'> Enjoy weekly hand picked recipe and <br></br>recomendationst</p>
         <form>

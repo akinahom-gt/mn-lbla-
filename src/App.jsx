@@ -14,19 +14,20 @@ import Vegetarian from "./Pages/Vegetarian"
 import Dessert from "./Pages/Dessert"
 import Profile from "./Pages/Profile"
 import Delete from "./Pages/Delete"
-import Reaction from "./Pages/Reaction"
 import Detail from "./Pages/Detail"
 import Footer from './Components/Footer.jsx'
-// import Search from "./Components/Search"
+import Share from "./Pages/Share"
 import Rating from "./Components/Rating"
+import Det from "./Pages/Det"
+
+// import Search from "./Components/Search"
+
 
 import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import Share from "./Pages/Share"
-import MealList from "./Pages/MealList"
 
 // const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
@@ -119,21 +120,20 @@ function App () {
           path: "/delete",
           element:<Delete/>
         },
-        {
-          path: "/reaction",
-          element:<Reaction/>
-        },
+      
         {
           path: "/detail",
           element:<Detail/>
         },
-        {path:"meallist" ,
-        element:<MealList/>
+      
+      {
+        path:"rating" ,
+        element:<Rating/>
       },
-      {path:"rating" ,
-      element:<Rating/>
-    },
-
+      {
+        path:"det" ,
+        element:<Det/>
+      },
 
       ]
   },

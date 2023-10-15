@@ -1,16 +1,15 @@
 import React from 'react'
-import Logo from '../images/Logo.svg'
+
 import { useLocation } from "react-router-dom";
 
 import {BiLogoFacebook, BiLogoTelegram, BiLogoInstagram, BiLogoTwitter }from 'react-icons/bi'
 const Footer = () => {
   const { pathname } = useLocation();
   console.log(pathname);
-  // you can check a more conditions here
   if (pathname === "/delete") return null;
   return (
     
-    <div className='p-7  relative inset-x-0  bottom-0 bg-gray-200 text-black'>
+    <div className='p-7  relative inset-x-0  bottom-0 bg-gray-200 text-black mt-8'>
       <div className=' xs:text-center mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  md:gap-2 '> 
          <div className=''>

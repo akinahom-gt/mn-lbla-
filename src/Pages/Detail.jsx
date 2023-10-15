@@ -1,4 +1,3 @@
-// src/components/MealDetails.js
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ function Detail() {
         );
 
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('response was not ok');
         }
 
         const data = await response.json();

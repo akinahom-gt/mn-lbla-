@@ -7,8 +7,7 @@ function Delete() {
 
   const handleDelete = () => {
     if (confirmation === 'Delete') {
-      // Perform the deletion logic here (simulate or show a success message).
-      // In a real application, you would make an API request to the backend.
+     
       setIsDeleted(true);
     } else {
       alert('Please type "DELETE" to confirm account deletion.');
@@ -25,12 +24,12 @@ function Delete() {
         
       ) : (
         <div>   
-        <p className='text-center text-xl font-poppins mt-[120px]'>Are you sure you want to delete your account?</p>
+        <p className='text-center text-xl font-poppins mt-[120px] '>Are you sure you want to delete your account?</p>
     <div className=' w-9/12 mx-auto mt-10'>
     <div className="flex w-full sm:w-10/12 mx-auto md:w-full xs:w-[300px] lg:flex-row flex-col justify-center ">
     <div className="w-full  lg:w-3/5 "></div>
     
-          <div className='justify-center items-center absolute '>
+          <div className='justify-center items-center absolute mb-[5px]'>
           <input
             type="text"
             placeholder="Type 'Delete' to confirm"

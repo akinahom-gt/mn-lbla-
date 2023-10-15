@@ -62,7 +62,7 @@ const validate = (values) => {
       </div>
       <div>
           <input
-            class="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
+            className="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
             type="email"
             id="email"
             name="email"
@@ -78,7 +78,7 @@ const validate = (values) => {
       </div>
       <div>
           <input
-            class="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
+            className="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
             type="password"
             id="password"
             name="password"
@@ -94,9 +94,9 @@ const validate = (values) => {
           </div>
           </form>
     <div class="flex w-[520px] items-center py-4">
-        <div class="flex-grow h-px bg-gray-400"></div> 
-        <span class="flex-shrink text-xl text-gray-400 px-4 font-poppins font-light">or Login with</span>
-        <div class="flex-grow  h-px bg-gray-400"></div>
+        <div className="flex-grow h-px bg-gray-400"></div> 
+        <span className="flex-shrink text-xl text-gray-400 px-4 font-poppins font-light">or Login with</span>
+        <div className="flex-grow  h-px bg-gray-400"></div>
     </div>
         <div className='inline-flex  gap-6 px-[190px]'>
           <div className=' rounded-xl'><BiLogoFacebook size={35} style={{color:'#1877F2'}} /></div>

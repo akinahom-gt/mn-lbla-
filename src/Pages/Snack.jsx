@@ -22,12 +22,12 @@ import Rating from "../Components/Rating"
        <div className=' inline-flex grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
         { data.map((recipe) => {
             return(
-                <div>
+                <div key={recipe.idMeal}>
                   
                  <img src={recipe.strMealThumb} alt="{recipe.title}"  
                     className=" w-[200px] h-[200px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>
                  <Rating/>
-                  <Link to="/details" className='font-poppins text-[15px]  text-centertext-gray-500 font-semibold '>
+                  <Link to="/det" className='font-poppins text-[15px]  text-centertext-gray-500 font-semibold '>
                   <div className='px-6'>{recipe.strMeal}</div>
                    </Link>
                 </div>

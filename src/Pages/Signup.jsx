@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from 'react'
-// import Login from './Pages/Login.jsx'
 import { Link } from "react-router-dom"
 import {AiOutlineMail,AiOutlineUser,AiOutlineLock} from 'react-icons/ai'
 const Signup = () => {
@@ -67,7 +66,7 @@ const Signup = () => {
       </div>
       <div>
           <input
-            class="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
+            className="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
             type="text"
             id="fullname"
             name="fullname"
@@ -83,7 +82,7 @@ const Signup = () => {
       </div>
       <div>
           <input
-            class="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
+            className="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
             type="email"
             id="email"
             name="email"
@@ -99,7 +98,7 @@ const Signup = () => {
       </div>
       <div>
           <input
-            class="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
+            className="border-b-2 w-[500px] font-normal border-black focus:outline-none hover:border-orange-400  focus:border-b-2 "
             type="password"
             id="password"
             name="password"

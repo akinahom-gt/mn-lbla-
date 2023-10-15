@@ -3,9 +3,6 @@ import { Link } from "react-router-dom"
 import Rating from "../Components/Rating"
 
  function Breakfast  () {
-  const [likeCount, setLikeCount] = useState(0);
-  const [dislikeCount, setDislikeCount] = useState(25);
-  const [activeBtn, setActiveBtn] = useState("none");
   const [data, setData] = useState([]);
     useEffect(() => {
         getData();
@@ -24,7 +21,7 @@ import Rating from "../Components/Rating"
        <div className=' inline-flex grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4'>
         { data.map((recipe) => {
             return(
-                <div>
+                <div key={recipe.idMeal}>
                     <img src={recipe.strMealThumb} alt="{recipe.title}"  
                     className=" w-[200px] h-[200px] hover:shadow-[0_35px_100px_-5px_rgba(0,0,0,0.5)] hover:z-50 rounded-full "/>
                    <Rating/>
