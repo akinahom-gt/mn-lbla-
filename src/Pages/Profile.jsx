@@ -4,16 +4,15 @@ import Avatar from "../images/avatar_.jpg"
 import { Link } from "react-router-dom"
 
 import {useState} from 'react';
-import {AiFillEye, AiFillEyeInvisible} from 'react-icons/ai'
+// import {AiFillEye, AiFillEyeInvisible} from 'react-icons/ai'
 const Profile = () => {
     const [password, setPassword] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
-    const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-};
+    // const [showPassword, setShowPassword] = useState(false);
+//     const togglePasswordVisibility = () => {
+//     setShowPassword(!showPassword);
+// };
     const [avatar, setAvatar] = useState(null);
 
-  // Function to handle file input change
   const handleFileChange = (event) => {
   const file = event.target.files[0];
     if (file) {
