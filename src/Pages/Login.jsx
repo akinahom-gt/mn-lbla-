@@ -93,7 +93,7 @@ const validate = (values) => {
           <button className='w-[240px] h-[60px] bg-orange-600 transition-all duration-300 hover:bg-Primary-Orange-200 font-poppins tracking-widest border-0 text-white px-6 py-2 rounded-full'>Login</button>
           </div>
           </form>
-    <div class="flex w-[520px] items-center py-4">
+    <div className="flex w-[520px] items-center py-4">
         <div className="flex-grow h-px bg-gray-400"></div> 
         <span className="flex-shrink text-xl text-gray-400 px-4 font-poppins font-light">or Login with</span>
         <div className="flex-grow  h-px bg-gray-400"></div>

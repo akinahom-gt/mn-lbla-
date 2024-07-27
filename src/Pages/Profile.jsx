@@ -2,15 +2,13 @@ import React from 'react'
 import Avatar from "../images/avatar_.jpg"
 // import Footer from './Components/Footer.jsx'
 import { Link } from "react-router-dom"
-
 import {useState} from 'react';
-// import {AiFillEye, AiFillEyeInvisible} from 'react-icons/ai'
 const Profile = () => {
     const [password, setPassword] = useState('');
-    // const [showPassword, setShowPassword] = useState(false);
-//     const togglePasswordVisibility = () => {
-//     setShowPassword(!showPassword);
-// };
+    const [showPassword, setShowPassword] = useState(false);
+    const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+};
     const [avatar, setAvatar] = useState(null);
 
   const handleFileChange = (event) => {
